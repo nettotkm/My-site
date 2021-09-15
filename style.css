@@ -16,7 +16,10 @@ body {
   top: 35%;
   left: 40%;
   transform: translateX(-50%, 50%);
-  position: absolute
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .user-box img {
@@ -325,4 +328,22 @@ middle-bar {
   padding-left: 30px;
   width: 80px;
   transition: 1s
+}
+
+@media (min-width: 400px) {
+  .user-box {
+
+    left: 1%;
+
+  }
+
+  .button-middle {
+    display: none
+  }
+
+  .about-text {
+    /* display: none; */
+    padding-left: 46px;
+    padding-right: 65px;
+  }
 }
